@@ -1,0 +1,34 @@
+.popular .items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.popular .items .flowers {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    
+}
+
+  
+.popular .items .flowers img {
+    border-radius: 8px;
+}
+
+.popular .items .flowers button{
+    background-color: pink;
+    border-radius: 20px;
+    /* border: none; */
+    margin: 20px;
+    padding: 15px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.popular .items .flowers button:hover {
+    background-color: rgb(255, 190, 190);
+    color: white;
+  }

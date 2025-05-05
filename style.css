@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 150px;
+  align-items: center;
+  gap: 150px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  gap: 50px;
+}
+
+header nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 1s;
+}
+
+header nav a:hover {
+  color: rgb(147, 167, 39);
+  font-size: 26px
+}
+
+.product{
+  padding: 20px;
+  width: 300px;
+  background-color: aqua;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.splide{
+  width: 100%;
+  margin: 50px auto;
+}
+
+.intro {
+  height: 90vh;
+  background-image: url();
+  background-color: pink;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  justify-content: space-between;
+}
+
+.intro .content {
+  padding-bottom: 150px;
+  width: 70%;
+  color: white
+}
+
+.intro .content h1 {
+  margin: 15px 0;
+  font-size: 50px;
+  color: white;
+}
+
+.intro .content button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.intro .content button:hover {
+  background-color: pink;
+  color: white;
+}
+
+.popular {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffe3ec;
+}
+
+.popular h2 {
+  font-size: 32px;
+  color: #d6336c;
+  margin-bottom: 40px;
+}
+
+.popular .items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.popular .items .card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  width: 220px;
+}
+
+.popular .items .card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.popular .items .card p {
+  font-size: 16px;
+  color: #313131;
+}
+
+@media (max-width: 1280px) {
+  header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .intro {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .intro .content{
+    padding-bottom: 30px;
+  }
+
+  .intro img {
+    width: 80%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    padding: 0%;
+  }
+
+  .intro .content {
+    width: 80%;
+  }
+
+  .intro .content h1 {
+    font-size: 35px;
+  }
+
+  .items {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
